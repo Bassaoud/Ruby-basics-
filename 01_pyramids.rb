@@ -1,3 +1,4 @@
+def half_pyramid
 hash = "#"
 blank = " "
 
@@ -5,6 +6,8 @@ puts "Entrez un nombre entre 1 et 25 "
 print ">"
 nb = gets.chomp.to_i
 empty_case = nb
+end
+
 
 if ((nb > 0) && (nb <= 25))
     nb.times do |i|
