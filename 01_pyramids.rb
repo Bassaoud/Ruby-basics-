@@ -1,14 +1,16 @@
 hash = "#"
 blank = " "
 
-puts "Entrez un nombre:"
+puts "Entrez un nombre entre 1 et 25 "
 print ">"
 nb = gets.chomp.to_i
-m = nb
-#empty_case = nb
+empty_case = nb
 
-
-    nb.times do |compteur|
-       puts "#{blank * (m - 1) + hash * (compteur + 1)}"
-       m = m - 1
+if ((nb > 0) && (nb <= 25))
+    nb.times do |i|
+        puts "#{blank * (nb - 1) + hash * (2*i + 1)}"
+        nb -= 1
     end
+else
+    puts "Le nombre n'est pas compris entre 1 et 25"
+end
